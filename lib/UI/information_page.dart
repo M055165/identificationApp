@@ -314,7 +314,7 @@ class _ContentBlockState extends State<ContentBlock> {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) => ContentPage123(
-                                            id: _data[i]["ID"],
+                                            id:(i+1)+(this.page-1)*8,
                                             user: widget.user,
                                           )));
                             }),

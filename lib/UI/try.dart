@@ -242,9 +242,8 @@ class _ContentPage123State extends State<ContentPage123> {
         child: Stack(
           fit: StackFit.expand,
           children: [
-            Image.network(
-              this.standard_photo,
-              fit: BoxFit.cover,
+            Image.asset(
+    'images/plant/${this.widget.id}.jpg',fit: BoxFit.cover,
             ),
             Positioned(
               top: 10,
