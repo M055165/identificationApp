@@ -77,6 +77,7 @@ flutter:
   assets:
   #  - images/a_dot_burr.jpeg
    - images/
+   - images/plant/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

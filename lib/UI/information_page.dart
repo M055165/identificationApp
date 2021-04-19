@@ -236,6 +236,9 @@ class _ContentBlockState extends State<ContentBlock> {
                     _getPageData(this.page);
                   });
                 }),
+            Text('${this.page}',style: TextStyle(
+                              fontSize:
+                                  20.0)),
             IconButton(
                 icon: Icon(Icons.navigate_next),
                 onPressed: () {
@@ -268,8 +271,8 @@ class _ContentBlockState extends State<ContentBlock> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Image.network(
-                      _data[i]['standard_photo'],
+                    Image.asset(
+                      'images/plant/${(i+1)+(this.page-1)*8}.jpg',
                       fit: BoxFit.cover,
                       width: double.infinity,
                       height: MediaQuery.of(context).size.height * 0.2,
