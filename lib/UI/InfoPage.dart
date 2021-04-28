@@ -287,8 +287,8 @@ class _InfoPageState extends State<InfoPage> {
                           children: [
                             Text(
                               local_language== ""
-                                  ? "鄒族名： 目前無資料"
-                                  : "鄒族名： $local_language",
+                                  ? "鄒族名:目前無資料"
+                                  : "鄒族名:$local_language",
                               style: TextStyle(
                                 fontSize: 20.0,
                                 decoration: TextDecoration.none,

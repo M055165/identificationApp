@@ -274,7 +274,7 @@ class _ContentPage123State extends State<ContentPage123> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    "鄒族名: " + this.local_language?? "目前無資料",
+                     this.local_language==''?'鄒族名:目前無資料':'鄒族名:${this.local_language}',
                     style: TextStyle(
                       fontSize: MediaQuery.of(context).size.height * 0.026,
                     ),

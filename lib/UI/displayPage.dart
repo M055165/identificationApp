@@ -50,7 +50,7 @@ class _DisplayPageState extends State<DisplayPage> {
               Container(
                 height: 250,
                 child: Card(
-                  child: Image.file(File(widget.imageLocation),),
+                  child: Image.file(File(widget.imageLocation),fit: BoxFit.cover),
                   // child: Image(
                   //   image: Image.file(widget.imageLocation);
                   // ),
