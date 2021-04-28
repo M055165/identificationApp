@@ -238,7 +238,7 @@ class _ContentPage123State extends State<ContentPage123> {
     return ListView(padding: EdgeInsets.fromLTRB(10, 20, 10, 10), children: <
         Widget>[
       Container(
-        height: MediaQuery.of(context).size.height * 0.4,
+        height: MediaQuery.of(context).size.height*0.35,
         child: Stack(
           fit: StackFit.expand,
           children: [
@@ -263,7 +263,7 @@ class _ContentPage123State extends State<ContentPage123> {
         ),
       ),
       Container(
-          height: MediaQuery.of(context).size.height * 0.15,
+          height: MediaQuery.of(context).size.height * 0.14,
           color: Colors.green,
           padding: EdgeInsets.all(10),
           child: Row(
@@ -274,7 +274,7 @@ class _ContentPage123State extends State<ContentPage123> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    "鄒族名: " + this.local_language,
+                    "鄒族名: " + this.local_language?? "目前無資料",
                     style: TextStyle(
                       fontSize: MediaQuery.of(context).size.height * 0.026,
                     ),

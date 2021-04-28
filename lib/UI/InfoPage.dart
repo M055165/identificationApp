@@ -263,6 +263,7 @@ class _InfoPageState extends State<InfoPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Container(
+                  height: MediaQuery.of(context).size.height*0.3,
                   child: Card(
                     child: Image.file(
                       File(widget.imageData),
@@ -274,7 +275,7 @@ class _InfoPageState extends State<InfoPage> {
                   ),
                 ),
                 Container(
-                    height: 80.0,
+                    height: MediaQuery.of(context).size.height * 0.14,
                     color: Colors.green,
                     padding: EdgeInsets.all(10),
                     child: Row(
@@ -285,7 +286,9 @@ class _InfoPageState extends State<InfoPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              '鄒語名:$local_language',
+                              local_language== ""
+                                  ? "鄒族名： 目前無資料"
+                                  : "鄒族名： $local_language",
                               style: TextStyle(
                                 fontSize: 20.0,
                                 decoration: TextDecoration.none,
@@ -354,9 +357,10 @@ class _InfoPageState extends State<InfoPage> {
                             title: Text(
                               "基本資料:",
                               style: TextStyle(
-                                  color: Colors.green[900],
-                                  fontSize: 18.0,
-                                  fontWeight: FontWeight.bold),
+                                 height: 1.0,
+                        fontSize: 18.0,
+                        color: Colors.green[900],
+                        fontWeight: FontWeight.bold),
                             ),
                             subtitle: Text(
                               basic_information == ""
@@ -364,8 +368,8 @@ class _InfoPageState extends State<InfoPage> {
                                   : "${basic_information}",
                               style: TextStyle(
                                   color: Colors.green[900],
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.bold),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
                             ),
                           ),
                         ],
@@ -448,44 +452,21 @@ class _InfoPageState extends State<InfoPage> {
                             title: Text(
                               "祭儀:",
                               style: TextStyle(
-                                  fontSize: 25.0,
-                                  color: Colors.green[900],
-                                  fontWeight: FontWeight.bold),
+                                  fontSize: 18.0,
+                        color: Colors.green[900],
+                        fontWeight: FontWeight.bold),
                             ),
                             subtitle: Text(
                               sacrifice == "" ? "目前無資料" : "${sacrifice}",
                               style: TextStyle(
-                                  fontSize: 20,
                                   color: Colors.green[900],
-                                  fontWeight: FontWeight.bold),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
                             ),
                           ),
                         ],
                       ),
-                    ),
-                    Card(
-                      margin: EdgeInsets.all(10),
-                      child: Column(
-                        children: [
-                          ListTile(
-                            title: Text(
-                              "其他",
-                              style: TextStyle(
-                                  fontSize: 25.0,
-                                  color: Colors.green[900],
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            subtitle: Text(
-                              other == "" ? "目前無資料" : "${other}",
-                              style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.green[900],
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
+                    )
                   ],
                 ),
               ],

@@ -243,7 +243,7 @@ class _ContentBlockState extends State<ContentBlock> {
                 icon: Icon(Icons.navigate_next),
                 onPressed: () {
                   setState(() {
-                    this.page < 13 ? this.page += 1 : this.page == 87;
+                    this.page < 87 ? this.page += 1 : this.page == 87;
                     _getPageData(this.page);
                   });
                 }),

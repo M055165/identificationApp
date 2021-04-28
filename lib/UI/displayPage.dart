@@ -48,13 +48,16 @@ class _DisplayPageState extends State<DisplayPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
-                height: 200,
+                height: 250,
                 child: Card(
-                  child: Image.file(File(widget.imageLocation)),
+                  child: Image.file(File(widget.imageLocation),),
                   // child: Image(
                   //   image: Image.file(widget.imageLocation);
                   // ),
                 ),
+              ),
+              SizedBox(
+                height:20
               ),
               Padding(
                 padding: EdgeInsets.all(10),
@@ -76,7 +79,7 @@ class _DisplayPageState extends State<DisplayPage> {
                         increaseWidthBy: 5,
                         child: Text(
                           "重新",
-                          style: TextStyle(fontSize: 10),
+                          style: TextStyle(fontSize: 20),
                         ),
                       ),
                     ),
@@ -96,7 +99,7 @@ class _DisplayPageState extends State<DisplayPage> {
                         increaseWidthBy: 5,
                         child: Text(
                           "送出",
-                          style: TextStyle(fontSize: 10),
+                          style: TextStyle(fontSize: 20),
                         ),
                       ),
                     ),
