@@ -1,17 +1,5 @@
-##草藥辨識App
+草藥辨識App
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
-# identificationApp
+此為我在國立中正大學雙主修資管學系的專題，而我也是這個專題的組長，在這個專題裡，我負責的是程式的撰寫、簡報的製作與報告(可以說是包山包海)。
+由於我的組員大多都是雙主修或者轉學生，因此對於程式的撰寫沒有那麼熟悉，因此我就接下這個重擔，負責程式的撰寫。透過這一年的努力，我們很榮幸的
+在資管系的畢業系展中，獲得第一名的佳績!
