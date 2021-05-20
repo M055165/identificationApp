@@ -1,4 +1,4 @@
-# bamboo
+#草藥辨識App
 
 A new Flutter project.
 
