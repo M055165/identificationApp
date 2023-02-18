@@ -159,16 +159,12 @@ class MapSampleState extends State<MapSample> {
   Map<MarkerId, Marker> markers = <MarkerId, Marker>{};
 
   void _getCurrentLocation() async {
-    print(latLng);
-    print("獲取資料中");
     final position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.high);
     setState(() {
       this.localMessageLatitude = position.latitude;
       this.localMessageLongtitude = position.longitude;
       latLng = LatLng(localMessageLatitude, localMessageLongtitude);
-      print("123");
-      print(latLng);
     });
   }
 
@@ -176,14 +172,12 @@ class MapSampleState extends State<MapSample> {
     var rng = new Random();
     var randomInt;
     randomInt = rng.nextInt(100);
-    // print(rng.nextInt(100));
     return randomInt;
   }
 
   _getPlantData() async {
     var api = 'http://140.123.94.131:8800/map/position/${widget.plantName}';
-    print("api測試");
-    print(api);
+
     final result = await http.get(api);
     if (result.statusCode == 200) {
       setState(() {
